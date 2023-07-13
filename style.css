@@ -30,7 +30,8 @@
     margin: 0 20px;
     position:relative;   
 }
-.navbar ul li a{
+.navbar ul li {
+    cursor:pointer;
     text-decoration: none; 
     color: #fff;
     text-transform: uppercase;
@@ -87,4 +88,52 @@ width:100%;
 }
 button:hover {
     border:none;
+}
+.popup .overlay{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background: rgba(0,0,0,0.7);
+    z-index:1;
+    display: none;
+}
+.popup .content1 {
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:transparent;
+    width:450px;
+    height:260px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing: border-box;
+    color:white;
+}
+.popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background: #222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display:block;
+}
+
+.popup.active .content1 {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
 }
