@@ -20,8 +20,8 @@
         <div class="content">
             <h1>Umów pupila na wizytę już dziś!</h1>
             <p><br></p>
-            <button type="button" onclick="dialUp()""><span></span>ZADZWOŃ</button>
-            <button type="button"><span></span>JAK DOJECHAĆ</button>
+            <button type="button" onclick="dialUp()"><span></span>ZADZWOŃ</button>
+            <button type="button" onclick="mapDirections()"><span></span>JAK DOJECHAĆ</button>
         </div>
     </div>
     <div class="popup" id="popup-1">
@@ -63,6 +63,14 @@
             <h1>+48 722 558 877</h1>
             </div>
     </div>
-   
+    <div class="popup" id="mapDirections-1">
+        <div class="overlay" onclick="mapDirections()"></div>
+        <div class="content1">
+            <div class="close-btn" onclick="mapDirections()">&times</div>
+            <h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.5909443238185!2d20.948335815116327!3d49.991860165412476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d84c3bb00b9c9%3A0xb774bbc32320a600!2sSalon%20psiej%20urody%20SONIA!5e0!3m2!1spl!2spl!4v1689326591921!5m2!1spl!2spl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </h1>
+            </div>
+    </div>
 </body>
 </html>
